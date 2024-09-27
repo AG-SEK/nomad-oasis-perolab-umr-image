@@ -39,7 +39,7 @@ plugins = [
   #"nomad-parser-plugins-atomistic>=1.0",
   #"nomad-parser-plugins-workflow>=1.0",
   #"nomad-parser-plugins-database>=1.0",
-  nomad-material-processing,
+  "nomad-material-processing",
   "nomad-synthesis @ git+https://github.com/FAIRmat-NFDI/AreaA-data_modeling_and_schemas.git",
   "nomad-baseclasses @ git+https://github.com/nomad-hzb/nomad-baseclasses.git",
   "nomad-perolab-umr @ git+https://github.com/AG-SEK/nomad-perolab-umr-plugin.git",

@@ -1,4 +1,4 @@
-![docker image](https://github.com/AG-SEK/nomad-oaisis-perolab-umr-image/actions/workflows/docker-publish.yml/badge.svg)
+![docker image](https://github.com/AG-SEK/nomad-oasis-perolab-umr-image/actions/workflows/docker-publish.yml/badge.svg)
 
 # AG-SEK's NOMAD Oasis Distribution
 
@@ -34,16 +34,16 @@ Below are instructions for how to deploy this NOMAD Oasis distribution
 2. Clone the repository or download the repository as a zip file.
 
 ```sh
-git clone https://github.com/AG-SEK/nomad-oaisis-perolab-umr-image.git
-cd nomad-oaisis-perolab-umr-image
+git clone https://github.com/AG-SEK/nomad-oasis-perolab-umr-image.git
+cd nomad-oasis-perolab-umr-image
 ```
 
 or
 
 ```sh
-curl-L -o nomad-oaisis-perolab-umr-image.zip "https://github.com/AG-SEK/nomad-oaisis-perolab-umr-image/archive/main.zip"
-unzip nomad-oaisis-perolab-umr-image.zip
-cd nomad-oaisis-perolab-umr-image
+curl-L -o nomad-oasis-perolab-umr-image.zip "https://github.com/AG-SEK/nomad-oasis-perolab-umr-image/archive/main.zip"
+unzip nomad-oasis-perolab-umr-image.zip
+cd nomad-oasis-perolab-umr-image
 ```
 
 3. _On Linux only,_ recursively change the owner of the `.volumes` directory to the nomad user (1000)
@@ -96,7 +96,7 @@ You can find more details on setting up and maintaining an Oasis in the NOMAD do
 ### For an existing Oasis
 
 If you already have an Oasis running you only need to change the image being pulled in
-your `docker-compose.yaml` with `ghcr.io/AG-SEK/nomad-oaisis-perolab-umr-image:main` for the services
+your `docker-compose.yaml` with `ghcr.io/AG-SEK/nomad-oasis-perolab-umr-image:main` for the services
 `worker`, `app`, `north`, and `logtransfer`.
 
 If you want to use the `nomad.yaml` from this repository you also need to comment out
@@ -155,7 +155,7 @@ be generated.
 
 ## FAQ/Trouble shooting
 
-_I get an_ `Error response from daemon: Head "https://ghcr.io/v2/AG-SEK/nomad-oaisis-perolab-umr-image/manifests/main": unauthorized`
+_I get an_ `Error response from daemon: Head "https://ghcr.io/v2/AG-SEK/nomad-oasis-perolab-umr-image/manifests/main": unauthorized`
 _when trying to pull my docker image._
 
 Most likely you have not made the package public or provided a personal access token (PAT).
